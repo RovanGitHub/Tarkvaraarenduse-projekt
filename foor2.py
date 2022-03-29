@@ -1,5 +1,7 @@
 import pygame # importib mooduli
 
+#https://github.com/RovanGitHub/Tarkvaraarenduse-projekt/blob/main/foor2.py
+
 pygame.init()# käivitab selle mooduli
 screen=pygame.display.set_mode([300,600])# teeb 300x600 akna
 pygame.display.set_caption("Foor - Merili Rohtla")# paneb akna nimeks "Foor - Merili Rohtla"
