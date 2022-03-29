@@ -12,11 +12,12 @@ pygame.draw.circle(screen, [0, 0, 0], [162, 82], 5, 0)  # Teeb musta lumememme p
 pygame.draw.polygon(screen, [255, 0, 0], [[145, 90], [155, 90], [150, 105]], 0)  # Teeb punase lumememme nina
 pygame.draw.circle(screen, [255, 255, 255], [150,150], 40, 0)  # Teeb valge lumememme keskmise palli
 pygame.draw.circle(screen, [255, 255, 255], [150, 235], 50, 0)  # Teeb valge lumememme alumise palli
-pygame.draw.line(screen, [165, 42, 42], [120,120], [50,110], 4)
-pygame.draw.line(screen, [165, 42, 42], [180,120], [240,120], 4)
-pygame.draw.line(screen, [165, 42, 42], [225,78], [241,117], 4)
-pygame.draw.line(screen, [165, 42, 42], [260,130], [266,80], 4)
-
+pygame.draw.line(screen, [165, 42, 42], [120,120], [50,110], 4) # vasak käsi
+pygame.draw.line(screen, [165, 42, 42], [180,120], [240,115], 4) # parem käsi
+pygame.draw.line(screen, [165, 42, 42], [260,78], [240,117], 4) # parem üleval käe oks
+pygame.draw.line(screen, [165, 42, 42], [240,117], [266,150], 4)# parem all käe oks
+pygame.draw.line(screen, [165, 42, 42], [51,110], [38,76], 4) # vasak üleval käe oks
+pygame.draw.line(screen, [165, 42, 42], [51,110], [36,140], 4) # vasak all käe oks
 pygame.display.flip()  # Värskendab ekraani
 
 for i in range(9999):
