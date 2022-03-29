@@ -26,6 +26,13 @@ for i in range(9999):
 # Internetist võetud, et akent kinni panna.
 running = True
 while running:
+    ev = pygame.event.get()
+
+    for event in ev:
+
+        if event.type == pygame.MOUSEBUTTONUP:
+            x, y = pygame.mouse.get_pos()
+            print(x, y)
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
