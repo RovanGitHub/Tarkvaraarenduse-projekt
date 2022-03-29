@@ -2,7 +2,7 @@ import pygame  # Importeerib pygame
 
 pygame.init()  # Käivitab pygame mooduli
 
-screen = pygame.display.set_mode([300, 300])  # Teeb 300x500 ekraani
+screen = pygame.display.set_mode([300, 300])  # Teeb 300x300 ekraani
 
 pygame.display.set_caption("Lumemees - Rovan Kütt")  # Paneb akna nimeks Rovan Kütt
 
