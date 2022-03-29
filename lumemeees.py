@@ -7,7 +7,11 @@ pygame.display.set_caption("Lumemees - Rovan Kütt")  # Paneb akna nimeks Rovan 
 
 screen.fill([102, 255, 255], (0, 0, screen.get_width(), 242))  # Teeb akna taeva osa siniseks
 screen.fill([250, 250, 250], (0, 242, screen.get_width(), screen.get_height()))  # Teeb akna maa osa valgeks ehk lumeks
-pygame.draw.circle(screen, [255, 255, 0], [28, 28], 15, 0)  # Teeb särava kollase päikese
+pygame.draw.circle(screen, [255, 255, 0], [0, 0], 50, 0)  # Teeb särava kollase päikese
+pygame.draw.line(screen, [255, 255, 0], [11, 58], [14, 75], 3)  # Teeb päikese kiire
+pygame.draw.line(screen, [255, 255, 0], [35, 50], [46, 62], 3)  # Teeb päikese kiire
+pygame.draw.line(screen, [255, 255, 0], [50, 27], [69, 34], 3)  # Teeb päikese kiire
+pygame.draw.line(screen, [255, 255, 0], [58, 10], [79, 13], 3)  # Teeb päikese kiire
 
 pygame.draw.circle(screen, [255, 255, 255], [150, 85], 30, 0)  # Teeb valge lumememme pea
 pygame.draw.circle(screen, [0, 0, 0], [138, 82], 5, 0)  # Teeb musta lumememme vasaku silma
