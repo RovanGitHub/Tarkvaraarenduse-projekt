@@ -1,6 +1,5 @@
 import pygame # importib mooduli
 
-#https://github.com/RovanGitHub/Tarkvaraarenduse-projekt
 
 pygame.init()# käivitab selle mooduli
 screen=pygame.display.set_mode([300,600])# teeb 300x600 akna
