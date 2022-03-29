@@ -3,8 +3,8 @@ import pygame  # Importeerib pygame
 pygame.init()  # Käivitab pygame mooduli
 
 screen = pygame.display.set_mode([300, 300])  # Teeb 300x300 ekraani
-
 pygame.display.set_caption("Lumemees - Rovan Kütt")  # Paneb akna nimeks Rovan Kütt
+screen.fill([102, 255, 255]) # tausta värv
 
 pygame.draw.circle(screen, [255, 255, 255], [150, 85], 30, 0)  # Teeb valge lumememme pea
 pygame.draw.circle(screen, [0, 0, 0], [138, 82], 5, 0)  # Teeb musta lumememme vasaku silma
