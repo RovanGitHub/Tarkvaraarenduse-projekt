@@ -22,6 +22,8 @@ pygame.draw.line(screen, [165, 42, 42], [51,110], [36,140], 4) # vasak all käe 
 pygame.draw.circle(screen, [0, 0, 0], [151, 130], 5, 0) # ülemine nööp
 pygame.draw.circle(screen, [0, 0, 0], [151, 145], 5, 0) # keskmine nööp
 pygame.draw.circle(screen, [0, 0, 0], [151, 160], 5, 0) # alumine nööp
+pygame.draw.line(screen, [165, 42, 42], [254,160], [253,57], 4) # hari vars
+pygame.draw.polygon(screen, [255, 255, 0], [[254,57],[262,44],[244,44]], 0) # hari kollane osa
 
 pygame.display.flip()  # Värskendab ekraani
 
