@@ -13,6 +13,18 @@ pygame.draw.line(screen, [255, 255, 0], [35, 50], [46, 62], 3)  # Teeb päikese 
 pygame.draw.line(screen, [255, 255, 0], [50, 27], [69, 34], 3)  # Teeb päikese kiire
 pygame.draw.line(screen, [255, 255, 0], [58, 10], [79, 13], 3)  # Teeb päikese kiire
 
+pygame.draw.circle(screen, [255,255,255], [250,70], 15, 0) # pilv
+pygame.draw.circle(screen, [255,255,255], [230,70], 20, 0) # pilv
+pygame.draw.circle(screen, [255,255,255], [210,70], 15, 0) # pilv
+
+pygame.draw.circle(screen, [255,255,255], [100,70], 15, 0) # pilv
+pygame.draw.circle(screen, [255,255,255], [80,70], 20, 0) # pilv
+pygame.draw.circle(screen, [255,255,255], [60,70], 15, 0) # pilv
+
+pygame.draw.circle(screen, [255,255,255], [230,140], 15, 0) # pilv
+pygame.draw.circle(screen, [255,255,255], [210,140], 20, 0) # pilv
+pygame.draw.circle(screen, [255,255,255], [190,140], 15, 0) # pilv
+
 pygame.draw.circle(screen, [255, 255, 255], [150, 85], 30, 0)  # Teeb valge lumememme pea
 pygame.draw.circle(screen, [0, 0, 0], [138, 82], 5, 0)  # Teeb musta lumememme vasaku silma
 pygame.draw.circle(screen, [0, 0, 0], [162, 82], 5, 0)  # Teeb musta lumememme parema silma
