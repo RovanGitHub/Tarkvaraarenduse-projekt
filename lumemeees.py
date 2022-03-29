@@ -18,6 +18,10 @@ pygame.draw.line(screen, [165, 42, 42], [260,78], [240,117], 4) # parem üleval 
 pygame.draw.line(screen, [165, 42, 42], [240,117], [266,150], 4)# parem all käe oks
 pygame.draw.line(screen, [165, 42, 42], [51,110], [38,76], 4) # vasak üleval käe oks
 pygame.draw.line(screen, [165, 42, 42], [51,110], [36,140], 4) # vasak all käe oks
+pygame.draw.circle(screen, [0, 0, 0], [151, 130], 5, 0) # ülemine nööp
+pygame.draw.circle(screen, [0, 0, 0], [151, 145], 5, 0) # keskmine nööp
+pygame.draw.circle(screen, [0, 0, 0], [151, 160], 5, 0) # alumine nööp
+
 pygame.display.flip()  # Värskendab ekraani
 
 for i in range(9999):
