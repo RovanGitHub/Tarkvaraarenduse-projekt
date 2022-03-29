@@ -10,6 +10,7 @@ pygame.draw.circle(screen, [255, 255, 255], [150, 85], 30, 0)  # Teeb valge lume
 pygame.draw.circle(screen, [0, 0, 0], [138, 82], 5, 0)  # Teeb musta lumememme vasaku silma
 pygame.draw.circle(screen, [0, 0, 0], [162, 82], 5, 0)  # Teeb musta lumememme parema silma
 pygame.draw.polygon(screen, [255, 0, 0], [[145, 90], [155, 90], [150, 105]], 0)  # Teeb punase lumememme nina
+pygame.draw.polygon(screen, [192,192,192], [[118, 60], [180, 60], [167, 30], [131, 30]])  # Teeb lumememmele ämbri/mütsi pähe
 pygame.draw.circle(screen, [255, 255, 255], [150,150], 40, 0)  # Teeb valge lumememme keskmise palli
 pygame.draw.circle(screen, [255, 255, 255], [150, 235], 50, 0)  # Teeb valge lumememme alumise palli
 pygame.draw.line(screen, [165, 42, 42], [120,120], [50,110], 4) # vasak käsi
