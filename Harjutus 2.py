@@ -10,18 +10,17 @@ bg = pygame.image.load("bg_shop.jpg")
 screen.blit(bg,[0,0])
 
 seller = pygame.image.load("seller.jpg")
-seller = pygame.transform.scale(seller, [250, 300])
-screen.blit(seller,[100,160])
+seller = pygame.transform.scale(seller, [252, 303])
+screen.blit(seller,[103,161])
 
 mull = pygame.image.load("chat.jpg")
-mull = pygame.transform.scale(mull, [260, 205])
-screen.blit(mull,[244,60])
+mull = pygame.transform.scale(mull, [258, 203])
+screen.blit(mull,[244,65])
 
 #lisame teksti
-font = pygame.font.Font(pygame.font.match_font('arial'), 30)
+font = pygame.font.SysFont('arial', 22, bold=True)
 text = font.render("Tere, olen Rovan Kütt", True, [255,255,255])
-screen.blit(text, [267,130])
-
+screen.blit(text, [280,135])
 
 pygame.display.flip()
 
