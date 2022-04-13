@@ -37,6 +37,11 @@ tort = pygame.image.load("tort.png")
 tort = pygame.transform.scale(tort, [95,75])
 screen.blit(tort,[330,220])
 
+# Logo
+logo = pygame.image.load("logo.png")
+logo = pygame.transform.scale(logo, [222, 64])
+screen.blit(logo, [10, 20])
+
 pygame.display.flip() # värskendab ekraani
 
 
