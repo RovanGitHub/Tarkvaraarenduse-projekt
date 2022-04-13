@@ -11,6 +11,11 @@ pygame.display.set_caption("Harjutus 2") # paneb akna nimeks Harjutus 2
 bg = pygame.image.load("bg_shop.jpg") # seab akna taustaks poe pildi
 screen.blit(bg,[0,0]) # toob pildi välja ja paigutab
 
+# Logo
+logo = pygame.image.load("logo.png")  # laeb logo
+logo = pygame.transform.scale(logo, [222, 64])  # muudab logo suurust
+screen.blit(logo, [10, 20])  # paigutab logo
+
 # Mehike
 seller = pygame.image.load("seller.jpg") # toob sisse mehikese pildi
 seller = pygame.transform.scale(seller, [252, 303]) # muudab pildi suurust
