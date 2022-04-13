@@ -21,11 +21,16 @@ mull = pygame.image.load("chat.jpg") # toob sisse jutumulli
 mull = pygame.transform.scale(mull, [258, 203]) # muudab jutumulli suurust
 screen.blit(mull,[244,65]) # toob jutumulli välja ja muudab asukohta
 
-#lisame teksti
+# Tekst
 font = pygame.font.SysFont('arial', 22, bold=True) # seadistab fondi arial, suurus 22 ja teeb boldiks
 text = font.render("Tere, olen Rovan Kütt", True, [255,255,255]) # seab teksti ja teksti valge värvina
 screen.blit(text, [280,135]) # toob teksti välja ja muudab asukohta
 
+# Mõõk
+mook = pygame.image.load("mõõk.png")  # toob sisse mõõga
+mook = pygame.transform.scale(mook, [208, 153]) # muudab mõõga suurust
+mook = pygame.transform.rotate(mook, -35) # keerab mõõka
+screen.blit(mook, [453, 145]) # toob mõõga välja ja muudab asukohta
 
 pygame.display.flip() # värskendab ekraani
 
