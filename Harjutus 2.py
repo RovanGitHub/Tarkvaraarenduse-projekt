@@ -32,6 +32,11 @@ mook = pygame.transform.scale(mook, [208, 153]) # muudab mõõga suurust
 mook = pygame.transform.rotate(mook, -35) # keerab mõõka
 screen.blit(mook, [453, 145]) # toob mõõga välja ja muudab asukohta
 
+#tort
+tort = pygame.image.load("tort.png")
+tort = pygame.transform.scale(tort, [95,75])
+screen.blit(tort,[330,220])
+
 pygame.display.flip() # värskendab ekraani
 
 
