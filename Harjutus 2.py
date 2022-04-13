@@ -3,7 +3,7 @@ pygame.init()
 
 # Github: https://github.com/RovanGitHub/Tarkvaraarenduse-projekt/blob/e5bd40bc4b9188fb8f511707c2b0c0c6bfe5cb89/Harjutus%202.py
 
-#ekraani seaded
+# Ekraani seaded
 screen=pygame.display.set_mode([640,480]) # teeb akna suurusega 640x480
 pygame.display.set_caption("Harjutus 2") # paneb akna nimeks Harjutus 2
 
