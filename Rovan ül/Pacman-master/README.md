@@ -1,23 +1,20 @@
-### Pacman in Python with PyGame
+### Pacman Python'is PyGame'iga
 
-This is a very minimal implementation of the Pacman game, having only one level and without ghosts strategy, not even with random movements (yes, the routes are programmed). However, we may improve this game in the future and everyone else interested can feel free to fork and contribute to this project.
+See on väga minimalistne versioon mängust Pacman,
+This is a very minimal implementation of the Pacman game, millel on ainult üks tase ja ilma kummitusstrateegiata, isegi mitte juhuslike liikumistega (jah, marsruudid on programmeeritud). Küll aga võime seda mängu tulevikus täiustada ja kõik teised huvilised võivad julgelt sellesse projekti kaasa lüüa.
 
 Lae installer siit: [https://github.com/RovanGitHub/Tarkvaraarenduse-projekt/Pacman-master/pacman.exe](https://github.com/RovanGitHub/Tarkvaraarenduse-projekt/tree/main/Rovan%20%C3%BCl/Pacman-master/pacman.exe)
 
 ![Pacman Game Window](https://raw.githubusercontent.com/RovanGitHub/Tarkvaraarenduse-projekt/main/Rovan%20%C3%BCl/Pacman-master/Nimetu.png))
 
 
-# Future development
+# Edasine areng
 
-* Fix Pacman's movement
-* Ghosts moving algorithm and artificial intelligence
-* Better design
-* Better algorithm for the walls
-* Additional levels?
-
-
-Tested with [PyGame 1.9](http://pygame.org/ftp/pygame-1.9.2a0.win32-py3.2.msi ) and [Python 3.2 32bit](http://www.python.org/ftp/python/3.2.3/python-3.2.3.msi)
-
+* Pacmani liikumise parandamine
+* Kummituste liigutamise algoritm ja tehisintellekt
+* Parem disain
+* Parem algoritm seinte jaoks
+* Täiendavad tasemed?
 
 ### Additional resources
 * [Pac-Man Dossier - strategy of the ghosts movement](http://home.comcast.net/~jpittman2/pacman/pacmandossier.html)
@@ -25,8 +22,3 @@ Tested with [PyGame 1.9](http://pygame.org/ftp/pygame-1.9.2a0.win32-py3.2.msi ) 
 * [PyGame tutorials](http://programarcadegames.com/index.php?lang=en)
 * [How To Write a Pacman Game in JavaScript](http://www.masswerk.at/JavaPac/pacman-howto.html)
 * [Original Pacman game](http://originalpacman.com/)
-
-
-
-### Support or Contact
-Twitter: https://twitter.com/hbokmann
