@@ -15,9 +15,9 @@ Lae installer siit: [https://github.com/RovanGitHub/Tarkvaraarenduse-projekt/Pac
 * Parem algoritm seinte jaoks
 * Täiendavad tasemed?
 
-### Additional resources
-* [Pac-Man Dossier - strategy of the ghosts movement](http://home.comcast.net/~jpittman2/pacman/pacmandossier.html)
+### Lisaressursid
+* [Kummituste liikumine](http://home.comcast.net/~jpittman2/pacman/pacmandossier.html)
 * [HTML5 Pacman](http://arandomurl.com/2010/07/25/html5-pacman.html)
-* [PyGame tutorials](http://programarcadegames.com/index.php?lang=en)
-* [How To Write a Pacman Game in JavaScript](http://www.masswerk.at/JavaPac/pacman-howto.html)
-* [Original Pacman game](http://originalpacman.com/)
+* [PyGame õpetused](http://programarcadegames.com/index.php?lang=en)
+* [Kuidas kirjutada Pacman mängu JavaScript'is](http://www.masswerk.at/JavaPac/pacman-howto.html)
+* [Originaalne Pacman'i mäng](http://originalpacman.com/)
