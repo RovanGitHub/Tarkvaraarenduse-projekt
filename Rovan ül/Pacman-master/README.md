@@ -4,7 +4,7 @@ See on väga minimalistne versioon mängust Pacman, millel on ainult üks tase j
 
 Lae installer siit: [https://github.com/RovanGitHub/Tarkvaraarenduse-projekt/Pacman-master/pacman.exe](https://github.com/RovanGitHub/Tarkvaraarenduse-projekt/tree/main/Rovan%20%C3%BCl/Pacman-master/pacman.exe)
 
-![Pacman Game Window](https://raw.githubusercontent.com/RovanGitHub/Tarkvaraarenduse-projekt/main/Rovan%20%C3%BCl/Pacman-master/Nimetu.png))
+![Pacman Game Window]((https://raw.githubusercontent.com/RovanGitHub/Tarkvaraarenduse-projekt/main/Rovan%20%C3%BCl/Pacman-master/Nimetu.png))
 
 
 # Edasine areng
