@@ -1,5 +1,7 @@
 from tkinter import * # Impordib tkinter
 
+# Minu GitHub: https://github.com/RovanGitHub/Tarkvaraarenduse-projekt/tree/main/Rovan%20%C3%BCl
+
 def save_info(): # Teeb funktsiooni save_info
     firstname_info = firstname.get() # paneb firstname_infole first name väärtuse
     lastname_info = lastname.get() # paneb lastname_infole last name väärtuse
