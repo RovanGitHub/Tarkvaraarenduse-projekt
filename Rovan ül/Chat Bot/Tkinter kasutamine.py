@@ -32,7 +32,7 @@ firstname = StringVar() # Saab hoida stringe
 lastname = StringVar() # Saab hoide stringe
 age = IntVar() # Saab hoida inte
 
-firstname_entry = Entry(textvariable=firstname, width="300") # Teeb lahtri ja selle suuruse
+firstname_entry = Entry(textvariable=firstname, width="30") # Teeb lahtri ja selle suuruse
 lastname_entry = Entry(textvariable=lastname, width="30") # Teeb lahtri ja selle suuruse
 age_entry = Entry(textvariable= age, width="30") # Teeb lahtri ja selle suuruse
 
