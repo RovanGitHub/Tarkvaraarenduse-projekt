@@ -1,5 +1,7 @@
 import smtplib # impordib smtplib
 
+# Minu GitHub: https://github.com/RovanGitHub/Tarkvaraarenduse-projekt/tree/main/Rovan%20%C3%BCl
+
 sender_email = "vikk.opilane@outlook.com" # kes saadab meili
 rec_email = "rovan.kutt@vikk.ee" # kellele saadab meili
 password = input(str("Please enter your password: ")) # küsib meili parooli
