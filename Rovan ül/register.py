@@ -51,24 +51,24 @@ def register(): # Teeb funktsiooni register
     Label(screen1, text = "").pack() # Teeb lahtri tühjaks
     Button(screen1, text = "Register", width = 10, height = 1, command = register_user).pack() #
 
-def login_verify():
+def login_verify(): # loob uue funktsiooni
 
-    username1 = username_verify.get()
-    password1 = password_verify.get()
-    username_entry1.delete(0, END)
-    password_entry1.delete(0, END)
+    username1 = username_verify.get() # võtab kasutaja nime
+    password1 = password_verify.get() # võtabk kasutaja parooli
+    username_entry1.delete(0, END) # kustutab kasutajanime väljast
+    password_entry1.delete(0, END) # kustutab parooli väljast
 
-    list_of_files = os.listdir()
-    if username1 in list_of_files:
-        file1 = open(username1, "r")
-        verify = file1.read().splitlines()
-        if password1 in verify:
-            login_sucess()
-            print("Login success")
-        else:
-            print("Password has no been recognised")
-    else:
-        print("User not found+")
+    list_of_files = os.listdir() # võtab kataloogist failid
+    if username1 in list_of_files: # kontrollib kas kasutajanimi on olemas
+        file1 = open(username1, "r") # avab faili
+        verify = file1.read().splitlines() # loob faili sisestuseks
+        if password1 in verify: # kontrollib kas parool on olemas
+            login_sucess() # kutsub sisse funktsiooni login_sucess
+            print("Login success") # prindib teksti
+        else: # kui parooli pole
+            print("Password has no been recognised") # prindib teksti
+    else: # kui kasutajat pole
+        print("User not found") # prindib teksti
 
 def login_sucess(): # Eduka sisselogimise funktsioon
     global screen3 # Muudab login väljundi
@@ -94,32 +94,32 @@ def user_not_found(): # Eduka sisselogimise funktsioon
     Label(screen5, text="User Not Found").pack() # Määrab login väljundi
     Button(screen5, text="OK", command=delete4).pack() # Määrab login väljundi
 
-def login(): # Teeb funktsiooni login
-    print("Login session started") # Prindib et logimine algas kui vajutad login nuppu
-    global screen2
-    screen2 = Toplevel(screen)
-    screen2.title("Login")
-    screen2.geometry("300x250")
-    Label(screen2, text = "Please enter details below to login in").pack()
-    Label(screen2, text = "").pack()
+def login(): # Eduka sisselogimise funktsioon
+    global screen2 # Muudab login väljundi
+    screen2 = Toplevel(screen) # Muudab login väljundi
+    screen2.title("Login") # Määrab akna tiiteltektsi
+    screen2.geometry("300x250") # Määrab akna suuruse
+    Label(screen2, text="Please enter details below to login").pack() # Määrab login väljundi
+    Label(screen2, text="").pack() # Määrab login väljundi
 
-    global username_verify
-    global password_verify
+    global username_verify # Muudab login väljundi
+    global password_verify # Muudab login väljundi
 
-    username_verify = StringVar()
-    password_verify = StringVar()
+    username_verify = StringVar() # Muudab login väljundi
+    password_verify = StringVar() # Muudab login väljundi
 
-    global username_entry1
-    global password_entry1
-    Label(screen2, text = "Username * ").pack()
-    username_entry1 = Entry(screen2, textvariable= username_verify)
-    username_entry1.pack()
-    Label(screen, text = "").pack()
-    Label(screen, text = "Password * ").pack()
-    password_entry1 = Entry(screen2, textvariable= password_verify)
-    password_entry1.pack()
-    Label(screen2, text = "").pack()
-    Button(screen2, text = "Login", width = 10, height = 1, command = login_verify).pack()
+    global username_entry1 # Muudab login väljundi
+    global password_entry1 # Muudab login väljundi
+
+    Label(screen2, text="Username * ").pack() # Määrab login väljundi
+    username_entry1 = Entry(screen2, textvariable=username_verify) # Määrab login väljundi
+    username_entry1.pack() # Määrab login väljundi
+    Label(screen2, text="").pack() # Määrab login väljundi
+    Label(screen2, text="Password * ").pack() # Määrab login väljundi
+    password_entry1 = Entry(screen2, textvariable=password_verify) # Määrab login väljundi
+    password_entry1.pack() # Määrab login väljundi
+    Label(screen2, text="").pack() # Määrab login väljundi
+    Button(screen2, text="Login", width=10, height=1, command=login_verify).pack() # Määrab login väljundi
 
 def main_screen(): # Teeb uue funktsiooni main_screen
     global screen # Teeb globaalse muutuja screen
