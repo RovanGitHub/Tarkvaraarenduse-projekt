@@ -1,6 +1,16 @@
 from tkinter import * # Importib tkniteri
+import os
 
 # Minu GitHub: https://github.com/RovanGitHub/Tarkvaraarenduse-projekt/tree/main/Rovan%20%C3%BCl
+
+def delete2(): # Kustutab login väljundi
+    screen3.destroy() # Kustutab login väljundi
+
+def delete3(): # Kustutab login väljundi
+    screen4.destroy() # Kustutab login väljundi
+
+def delete4(): # Kustutab login väljundi
+    screen5.destroy() # Kustutab login väljundi
 
 def register_user(): # Teeb funktsiooni register_user
     username_info = username.get() # Kasutajanimi väärtus on sisestatud kasutaja nimi
@@ -32,6 +42,7 @@ def register(): # Teeb funktsiooni register
     Label(screen1, text = "Please enter details below").pack() # Teeb uue teksti et lisa oma detailid
     Label(screen1, text = "").pack() # # Teeb lahtri tühjaks
     Label(screen1, text = "Username * ").pack() # Teeb uue teksti lahtri jaoks Username
+
     username_entry = Entry(screen1, textvariable = username) # Võtab kasutajanime
     username_entry.pack() # Pack asutatakse selleks, et vidin täidaks kogu kaadri
     Label(screen1, text = "Password * ").pack() # Teeb uue teksti lahtri jaoks password
@@ -40,8 +51,75 @@ def register(): # Teeb funktsiooni register
     Label(screen1, text = "").pack() # Teeb lahtri tühjaks
     Button(screen1, text = "Register", width = 10, height = 1, command = register_user).pack() #
 
+def login_verify():
+
+    username1 = username_verify.get()
+    password1 = password_verify.get()
+    username_entry1.delete(0, END)
+    password_entry1.delete(0, END)
+
+    list_of_files = os.listdir()
+    if username1 in list_of_files:
+        file1 = open(username1, "r")
+        verify = file1.read().splitlines()
+        if password1 in verify:
+            login_sucess()
+            print("Login success")
+        else:
+            print("Password has no been recognised")
+    else:
+        print("User not found+")
+
+def login_sucess(): # Eduka sisselogimise funktsioon
+    global screen3 # Muudab login väljundi
+    screen3 = Toplevel(screen) # Muudab login väljundi
+    screen3.title("Success") # Määrab akna tiiteltektsi
+    screen3.geometry("150x100") # Määrab akna suuruse
+    Label(screen3, text="Login Sucess").pack() # Määrab login väljundi
+    Button(screen3, text="OK", command=delete2).pack() # Määrab login väljundi
+
+def password_not_recognised(): # Eduka sisselogimise funktsioon
+    global screen4 # Muudab login väljundi
+    screen4 = Toplevel(screen) # Muudab login väljundi
+    screen4.title("Success") # Määrab akna tiiteltektsi
+    screen4.geometry("150x100") # Määrab akna suuruse
+    Label(screen4, text="Password Error").pack() # Määrab login väljundi
+    Button(screen4, text="OK", command=delete3).pack() # Määrab login väljundi
+
+def user_not_found(): # Eduka sisselogimise funktsioon
+    global screen5 # Muudab login väljundi
+    screen5 = Toplevel(screen) # Muudab login väljundi
+    screen5.title("Success") # Määrab akna tiiteltektsi
+    screen5.geometry("150x100") # Määrab akna suuruse
+    Label(screen5, text="User Not Found").pack() # Määrab login väljundi
+    Button(screen5, text="OK", command=delete4).pack() # Määrab login väljundi
+
 def login(): # Teeb funktsiooni login
     print("Login session started") # Prindib et logimine algas kui vajutad login nuppu
+    global screen2
+    screen2 = Toplevel(screen)
+    screen2.title("Login")
+    screen2.geometry("300x250")
+    Label(screen2, text = "Please enter details below to login in").pack()
+    Label(screen2, text = "").pack()
+
+    global username_verify
+    global password_verify
+
+    username_verify = StringVar()
+    password_verify = StringVar()
+
+    global username_entry1
+    global password_entry1
+    Label(screen2, text = "Username * ").pack()
+    username_entry1 = Entry(screen2, textvariable= username_verify)
+    username_entry1.pack()
+    Label(screen, text = "").pack()
+    Label(screen, text = "Password * ").pack()
+    password_entry1 = Entry(screen2, textvariable= password_verify)
+    password_entry1.pack()
+    Label(screen2, text = "").pack()
+    Button(screen2, text = "Login", width = 10, height = 1, command = login_verify).pack()
 
 def main_screen(): # Teeb uue funktsiooni main_screen
     global screen # Teeb globaalse muutuja screen
@@ -57,5 +135,3 @@ def main_screen(): # Teeb uue funktsiooni main_screen
     screen.mainloop() # Käsib aknal oodata, kuni kasutaja midagi teeb
 
 main_screen() # Käivitab funktsiooni main_screen
-
-
